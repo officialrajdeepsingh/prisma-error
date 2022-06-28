@@ -121,5 +121,49 @@ Unpacking libmozjs-91-0:amd64 (91.10.0-0ubuntu1) over (91.7.0-2) ...
 Setting up libmozjs-91-0:amd64 (91.10.0-0ubuntu1) ...
 Processing triggers for libc-bin (2.35-0ubuntu3) ...
 
+# step 7
+rajdeepsingh@officialrajdeepsingh:~/working/next-prisma$ sudo apt remove --purge libssl-dev
+[sudo] password for rajdeepsingh: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages will be REMOVED:
+  libssl-dev*
+0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
+After this operation, 12.4 MB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 218431 files and directories currently installed.)
+Removing libssl-dev:amd64 (3.0.2-0ubuntu1.5) ...
+rajdeepsingh@officialrajdeepsingh:~/working/next-prisma$ sudo apt-get remove --purge  -y glibc-doc
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Package 'glibc-doc' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+rajdeepsingh@officialrajdeepsingh:~/working/next-prisma$ sudo apt-get install -y glibc-doc
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  glibc-doc-reference
+The following NEW packages will be installed:
+  glibc-doc glibc-doc-reference
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 5,689 kB of archives.
+After this operation, 17.1 MB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 glibc-doc-reference all 2.35-0ubuntu1 [5,667 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 glibc-doc all 2.35-0ubuntu3 [22.2 kB]
+Fetched 5,689 kB in 5s (1,097 kB/s)   
+Selecting previously unselected package glibc-doc-reference.
+(Reading database ... 218283 files and directories currently installed.)
+Preparing to unpack .../glibc-doc-reference_2.35-0ubuntu1_all.deb ...
+Unpacking glibc-doc-reference (2.35-0ubuntu1) ...
+Selecting previously unselected package glibc-doc.
+Preparing to unpack .../glibc-doc_2.35-0ubuntu3_all.deb ...
+Unpacking glibc-doc (2.35-0ubuntu3) ...
+Setting up glibc-doc-reference (2.35-0ubuntu1) ...
+Setting up glibc-doc (2.35-0ubuntu3) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for install-info (6.8-4build1) ...
 
 
